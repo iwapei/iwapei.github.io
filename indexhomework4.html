@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="basehomework4.css">
+    <title>部活紹介</title>
+
+    </head>
+    <body>
+         <h1>部活動紹介</h1>
+         <div>
+             <dl>
+                <dt>クラブ名</dt>
+                <dd>Soka Magician's Program</dd>
+                 
+                <dt>活動日</dt>
+                <dd>月曜18:30-20:00 水・金曜17:00-19:00</dd>
+                 
+                <dt>活動内容</dt>
+                <dd>ジャグリング・マジック・バルーンアート・クラウン</dd>
+                 
+                <dt>イベント</dt>
+                <dd>新入生歓迎会・定期発表会・大学祭・執行交代式・合宿</dd>
+                 
+                <dt>一言</dt>
+                <dd>未経験でも誰でも歓迎です。是非一度遊びに来てくださいね！</dd>
+            </dl>
+        </div>
+        
+        <div>
+             <h2>部活動の様子</h2>
+             <img src="jug2.jpg" width="400" />
+             <img src="jug3.png" width="400" />
+        </div>
+        
+         <div>
+         <h2>Soka Magician's 公式HPへのリンク</h2>
+         <a href="https://smpperformer.wixsite.com/smp-performer1998" target="_blank">Soka Magician's Program 公式HPへのリンク</a>
+        </div>
+        
+        <h2>お問い合わせフォーム</h2>
+        
+          </div>
+            
+            <form action="#" method="get">
+                
+             <p>
+                <label for="last-name">姓：</label>
+                <input type="text" name="lastname" id="last-name" placeholder="姓" required />
+                
+                 <label for="first-name">名：</label>
+                 <input type="text" name="firstname" id="first-name" placeholder="名" required />
+             </p> 
+                <p>
+                <label for="password">パスワード：</label>
+                <input type="password" name="password" id="password" placeholder="パスワード" required />
+            
+                     
+                </p>
+                
+                <p>
+                   
+                   <input type="checkbox" name="agreement" id="agreement" checked />
+                   <label for="agreement">プライバシーポリシーに同意する</label>
+                </p>
+                
+                <p>
+                    <label><input type="radio" name="seibutsu" value="female" />女性</label>
+                    <label><input type="radio" name="seibutsu" value="male" />男性</label>
+                    <label><input type="radio" name="seibutsu" value="other" />その他    </label>
+                </p>
+                
+                <p>
+                    <label for="requests">要望</label>
+                    <textarea id="requests" name="requests" rows="8" cols="60">
+                    </textarea>
+                </p>
+                
+              
+                
+                <p>
+                   <input type="submit" value="送信する" />
+                   <input type="reset" value="リセット" />
+                </p>
+                
+                
+                
+            
+            </form>
+            
+        </div>
+
+            <script src="homework5.js"></script>
+
+
+         <div>
+            <h2>部員とじゃんけん！！なにをだす？</h2>
+            <button type="button" onclick="rockpaperscissors(1)">グー</button>
+            <button type="button" onclick="rockpaperscissors(2)">チョキ</button>
+            <button type="button" onclick="rockpaperscissors(3)">パー</button>
+        </div>
+          
+
+             <script>
+            var cp_hand = Math.floor( Math.random() * 3 ) + 1;
+            function rockpaperscissors(myhand){
+                if(myhand == 1){      //グーの場合
+                    if (cp_hand == 1){
+                        alert("相手はグーを出しました。\n引き分けです。");
+                    }
+                    else if (cp_hand == 2){
+                        alert("相手はチョキを出しました。\nあなたの勝ちです。");
+                    }
+                    else if(cp_hand == 3){
+                        alert("相手はパーを出しました。\nあなたの負けです。");
+                    }
+                }
+                else if(myhand == 2){     //チョキの場合
+                    if (cp_hand == 1){
+                        alert("相手はグーを出しました。\nあなたの負けです。");
+                    }
+                    else if (cp_hand == 2){
+                        alert("相手はチョキを出しました。\n引き分けです。");
+                    }
+                    else if(cp_hand == 3){
+                        alert("相手はパーを出しました。\nあなたの勝ちです。");
+                    }
+                }
+                else if(myhand == 3){     //パーの場合
+                    if (cp_hand == 1){
+                        alert("相手はグーを出しました。\nあなたの勝ちです。");
+                    }
+                    else if (cp_hand == 2){
+                        alert("相手はチョキを出しました。\nあなたの負けです。");
+                    }
+                    else if(cp_hand == 3){
+                        alert("相手はパーを出しました。\n引き分けです。");
+                    }
+                }
+            }
+        </script>
+             
+        
+    
+    </body>
+
+
+
+
+
+</html>
