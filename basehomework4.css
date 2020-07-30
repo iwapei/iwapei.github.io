@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+body {
+     font-size: 16px;
+     font-family: sans-serif;
+}
+
+div{
+     
+} background-color: blue;
+
+
+h1 {
+    text-align: center;
+    
+    background-color: darkorange;
+}
+
+input[type="submit"]{
+    
+    border: 1px solid #0086f9;
+    border-radius: 4px;
+    background: linear-gradient(0deg, #0086f9, #b6d6f7);
+    color: #FFF;
+    
+}
+
+input[type="reset"]{
+    
+    border: 1px solid #0086f9;
+    border-radius: 4px;
+    background: linear-gradient(0deg, #0086f9, #b6d6f7);
+    color: #FFF;
+    
+    
+}
